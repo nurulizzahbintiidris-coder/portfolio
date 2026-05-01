@@ -40,25 +40,28 @@
 
   <div class="contact-container">
 
-    <!-- LEFT: FORM -->
-    <div class="contact-form">
+  
+<!-- LEFT: FORM -->
+<div class="contact-form">
 
-      <form action="mailto:nurulizzahbintiidris@gmail.com" method="post" enctype="text/plain">
+  <form name="contact" method="POST" data-netlify="true">
 
-        <input type="text" name="name" placeholder="Enter your name" required>
+    <!-- IMPORTANT -->
+    <input type="hidden" name="form-name" value="contact">
 
-        <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="text" name="name" placeholder="Enter your name" required>
 
-        <input type="text" name="subject" placeholder="Enter your subject" required>
+    <input type="email" name="email" placeholder="Enter your email" required>
 
-        <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+    <input type="text" name="subject" placeholder="Enter your subject" required>
 
-        <button type="submit">Send Message</button>
+    <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
 
-      </form>
+    <button type="submit">Send Message</button>
 
-    </div>
+  </form>
 
+</div>
     <!-- RIGHT: INFO -->
     <div class="contact-info">
 
