@@ -1,0 +1,136 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050814;
+  color: white;
+  padding-top: 30px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+  background: #050814;
+  border-bottom: 1px solid #1a75ff;
+  z-index: 999;
+}
+
+.logo {
+  color: #4da6ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e0ff;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+  padding: 100px 0;
+  background: #070b1a;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4da6ff;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.skills-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #050814, #0a0f2c);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #2b6fff;
+}
+
+.skill-card .skill:first-of-type {
+  margin-top: 10px;
+}
+
+/* SKILL */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.skill-item i {
+  font-size: 22px;
+  color: #4da6ff;
+}
+
+/* BAR */
+.bar-wrapper {
+  position: relative;
+}
+
+.percent {
+  position: absolute;
+  top: -18px;
+  right: 0;
+  font-size: 12px;
+  color: #4da6ff;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #050814;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1a75ff;
+}
+
+/* ANIMATION PART */
+.bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #1a75ff, #4da6ff);
+  transition: width 1.5s ease-in-out;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}

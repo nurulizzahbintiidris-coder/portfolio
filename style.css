@@ -1,0 +1,135 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  }
+
+body {
+  margin: 0;
+  padding-top: 15px;
+  background: #050814;
+  color: white;
+}
+
+/* ================= HOME ================= */
+.home {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 100px;
+background: linear-gradient(135deg, #050505, #0a0f2c);
+}
+
+/* TITLE */
+.welcome-title {
+font-size: 2.5rem;
+color: #4da6ff;
+text-shadow: 0 0 15px #1a75ff;
+margin-bottom: 30px;
+text-align: center;
+}
+
+/* MAIN CONTAINER */
+.home-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+gap: 50px;
+}
+
+/* TEXT */
+.home-text {
+max-width: 500px;
+}
+
+.home-text h2 {
+font-size: 2rem;
+}
+
+.home-text h2 span {
+color: #4da6ff;
+text-shadow: 0 0 10px #1a75ff;
+}
+
+.home-text h3 {
+margin-top: 10px;
+color: #cfd6ff;
+}
+
+.home-text p {
+margin-top: 15px;
+line-height: 1.6;
+color: #cfd6ff;
+}
+
+/* STATS */
+.home-stats {
+display: flex;
+gap: 30px;
+margin: 20px 0;
+}
+
+.home-stats h3 {
+color: #4da6ff;
+}
+
+/* BUTTON */
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background: #4da6ff;
+color: black;
+text-decoration: none;
+border-radius: 6px;
+transition: 0.3s;
+}
+
+.btn:hover {
+box-shadow: 0 0 15px #1a75ff;
+}
+
+/* IMAGE */
+.home-image img {
+width: 260px;
+border-radius: 50%;
+border: 3px solid #4da6ff;
+box-shadow: 0 0 20px #1a75ff;
+}
+
+/* ================= ANIMATION ================= */
+.fade-in {
+animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+animation: slideIn 1.5s ease-in;
+}
+
+@keyframes slideIn {
+from { opacity: 0; transform: translateX(50px); }
+to { opacity: 1; transform: translateX(0); }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+.home-container {
+flex-direction: column;
+text-align: center;
+}
+
+.navbar {
+flex-direction: column;
+gap: 10px;
+}
+}

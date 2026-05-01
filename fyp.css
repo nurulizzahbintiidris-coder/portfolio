@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  }
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background: #050814;
+  color: white;
+}
+
+
+/* MAIN CONTAINER */
+.main {
+  width: 92%;
+  max-width: 1200px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* HEADER */
+.header h1 {
+  color: #4da6ff;
+  text-shadow: 0 0 15px rgba(26,117,255,0.5);
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #9fb3d9;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ================= CIRCULAR PROGRESS ================= */
+
+.circle-wrap {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #1a1f3a;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* REAL 75% PROGRESS */
+.circle-progress {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #1a75ff 0% 75%,
+    #1a1f3a 75% 100%
+  );
+}
+
+/* CENTER CIRCLE */
+.inside-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #050814;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: bold;
+  color: #4da6ff;
+
+  box-shadow: inset 0 0 10px rgba(26,117,255,0.3);
+}
+
+/* SECTION TITLE */
+.section-title {
+  margin: 20px 0;
+  color: #4da6ff;
+}
+
+/* ================= CARDS ================= */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(15, 20, 50, 0.6);
+  border: 1px solid rgba(77,166,255,0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(26,117,255,0.25);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* PROGRESS BAR */
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #1a1f3a;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1a75ff, #4da6ff);
+}
+
+/* TEXT */
+.card p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #9fb3d9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,153 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050814;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  padding: 20px 40px;
+  background: #050814;
+  border-bottom: 1px solid #1a75ff;
+}
+
+.logo {
+  color: #4da6ff;
+}
+
+/* ================= CONTACT ================= */
+.contact-section {
+  padding: 80px 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4da6ff;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cfd6ff;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT FORM */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #1a75ff;
+  border-radius: 8px;
+  background: #0a0f2c;
+  color: white;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: linear-gradient(90deg, #1a75ff, #4da6ff);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT INFO */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h3 {
+  color: #4da6ff;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #cfd6ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.social a {
+  font-size: 28px;
+  color: #4da6ff;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #cfd6ff;
+  font-size: 16px;
+
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.social-item i {
+  font-size: 22px;
+  color: #4da6ff;
+}
+
+.social-item:hover {
+  color: white;
+  transform: translateX(5px);
+}
